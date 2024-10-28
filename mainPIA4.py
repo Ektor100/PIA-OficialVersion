@@ -1,6 +1,8 @@
 #! /usr/bin/python	
 
 import platform
+import subprocess
+
 
 def Continue_Program():
 	anl=int(input("please do state if you wish to 1) si 2) no "))
@@ -20,12 +22,17 @@ def Linux():
 	
 	
 def Window():
-	print("hellooooooooo")
+	import subprocess, sys
+
+	p = subprocess.Popen(["powershell.exe", 
+              "C:\\Users\\USER\\Desktop\\helloworld.ps1"], 
+              stdout=sys.stdout)
+	p.communicate()
 
 
 if ps=="Windows":
 	Window()	
-	print("hello windows")
+	
 elif ps =="Linux":
 	Linux()
 	print("hello linux")
