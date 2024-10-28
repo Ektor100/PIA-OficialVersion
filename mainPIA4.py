@@ -35,19 +35,6 @@ if ps=="Windows":
 	
 elif ps =="Linux":
 	Linux()
-	print("hello linux")
 else: 
 	print("Your SO is not compatible with the program")
-
-
-
-
-
-
-
-
-
-
-
-
 	
