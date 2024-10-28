@@ -2,7 +2,7 @@
 
 import platform
 import subprocess
-
+import mainpowershell.ps1
 
 def Continue_Program():
 	anl=int(input("please do state if you wish to 1) si 2) no "))
