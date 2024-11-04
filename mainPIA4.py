@@ -24,7 +24,7 @@ def Window():
 	import subprocess, sys
 
 	p = subprocess.Popen(["powershell.exe", 
-              "C:\\Users\\USER\\Desktop\\helloworld.ps1"], 
+              ".\mainpowershell.ps1"], 
               stdout=sys.stdout)
 	p.communicate()
 
