@@ -1,9 +1,25 @@
 <#
 .NOTES
-este menu requiere de diferentes modulos para correr correctamente y solo se podra elegir de la opcion 1 a 5#>
+1 Para que el modulo API_function.psd1 funcione correctamente ten en cuenta que debes tener tu APIKEY y no tengas error al momento de hacer la revicion de virus total
+2 Para en funcionamiento correcto del modulo savePassword.psm1 debes tener en cuanta que la contraseña no puede tener menos de 8 y mas de 10 caracteres
+3 El modulo resourse.psm1 monitoreara el uso de los recursos del sistema ten en cuenta que debes activa el modo estricto en PowerShell, ayudando a identificar errores comunes, como variables no inicializadas
+4 El modulo File_function.psd1 mostrara los archivos ocultos del sistema ya sea en directorio actual o de todo el sistema#>
 <#
+.SYNOPSIS
+1) Hara una revicion de tus archivos a traves de virus total
+2) Mostrara los archivos ocultos del diractorio actual o de todo el sistema
+3) Revisara el usu de los recursos de tu sistema operativo
+4) Te ayudara a crear contraseñas seguras para diversas paginas web#>
+<#
+.DESCRIPTION
+Este script de PowerShell te ayudara a realizar diversas tareas diversas tareas de ciberseguridad tendras a elegir 5 opciones de la cual deberas elegir una al completarse se volvera a mostrar el menu si quieres realizar otra tarea o simplemente cerrar el script#>
+<# 
 .EXAMPLE
-PS C:\> get-help.\main.ps1 -full#>
+Para get-help PS C:\> get-help.\main.ps1 -full
+Para correr el script .mainPIA4.PY#>
+<#
+.LINK
+https://www.virustotal.com para tu API-KEY#>
 New-ModuleManifest -path ".\resourse.psd1" -Rootmodule ".\resourse.psm1" 
 Import-Module ".\resourse.psm1" 
 New-ModuleManifest -path ".\savePassword.psd1" -Rootmodule ".\savePassword.psm1" 
