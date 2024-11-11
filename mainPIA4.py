@@ -16,18 +16,14 @@ def platform_system():
 ps=(platform_system())
 print(ps)
 def Linux():
-	print("byeeeeebyeeeee")
-	
-	
+	subprocess.run(["/bin/bash","./main.sh"]) 
 	
 def Window():
 	import subprocess, sys
-
 	p = subprocess.Popen(["powershell.exe", 
               ".\mainpowershell.ps1"], 
               stdout=sys.stdout)
 	p.communicate()
-
 
 if ps=="Windows":
 	Window()	
