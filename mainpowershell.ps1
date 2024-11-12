@@ -16,7 +16,7 @@ Este script de PowerShell te ayudara a realizar diversas tareas diversas tareas 
 <# 
 .EXAMPLE
 Para get-help PS C:\> get-help.\main.ps1 -full
-Para correr el script .mainPIA4.PY#>
+Para correr el script .\mainPIA4.PY#>
 <#
 .LINK
 https://www.virustotal.com para tu API-KEY#>
