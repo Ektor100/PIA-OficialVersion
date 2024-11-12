@@ -15,7 +15,7 @@
 Este script de PowerShell te ayudara a realizar diversas tareas diversas tareas de ciberseguridad tendras a elegir 5 opciones de la cual deberas elegir una al completarse se volvera a mostrar el menu si quieres realizar otra tarea o simplemente cerrar el script#>
 <# 
 .EXAMPLE
-Para get-help PS C:\> get-help.\main.ps1 -full
+Para get-help PS C:\> get-help .\mainpowershell.ps1 -full
 Para correr el script .\mainPIA4.PY#>
 <#
 .LINK
